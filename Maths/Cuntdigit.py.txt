@@ -1,0 +1,15 @@
+
+
+class Solution:
+    def evenlyDivides (self, N):
+        c=0
+        z=N
+        s=str(N)
+        for i in s:
+            if i=="0":
+                continue
+            else:
+                if N%int(i)==0:
+                    c+=1
+        return c
+            
